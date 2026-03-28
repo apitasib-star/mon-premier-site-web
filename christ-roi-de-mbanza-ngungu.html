@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Christ-Roi de Mbanza-Ngungu</title>
+	<link rel="stylesheet" href="style2.css">
+</head>
+<body>
+	<header>
+<h1>
+	La Paroisse Christ-Roi de Mbanza-Ngungu
+</h1>
+
+	<p>
+		<img src="images/Image1.jpg" alt="Image1" width="150"/>
+		<img src="images/Image2.jpg" alt="Image2" width="150"/>
+	</p>
+
+	<p>
+		La paroisse Christ-Roi de Mbanza-Ngungu est une institution catholique centrale du Diocèse de Matadi dans le Kongo Central. Elle dessert la cité ferroviaire, témoignant de l'implantation ancienne de l'Église catholique dans cette région, marquée par des structures paroissiales solides. 
+	</p>
+
+	<p>
+		Les Etapes essentiel de l'Eglise:
+	<ul>
+	<li>Contexte : Située au cœur de Mbanza-Ngungu (anciennement Thysville), elle fait partie du diocèse de Matadi, dont l'histoire missionnaire remonte à la fin du XIXe siècle;
+	</li>
+	<li>Mission : En tant que paroisse catholique, elle est dédiée à la fête du Christ Roi, instituée en 1925 pour affirmer la royauté universelle du Christ, une dévotion populaire dans l'Église;
+	</li>
+	<li>Activité : Elle joue un rôle clé dans la vie spirituelle, éducative et sociale de la population locale, accueillant de nombreux fidèles.
+	</li>
+	</ul>
+		La paroisse est un point de repère religieux et historique important de la ville de Mbanza-Ngungu. 
+	</p>
+
+	<p>
+		<h2>Formulaire d'adhésion:</h2>
+	
+	</p>
+	<script src="script2.js"></script>
+<form id="monForm" onsubmit="return validerFormulaire()">
+  <label for="nom">Nom :</label>
+  <input type="text" id="nom" name="nom">
+  <label for="postnom">Postnom :</label>
+  <input type="text" id="postnom" name="postnom">
+  <label for="prénom">Prénom :</label>
+  <input type="text" id="prénom" name="prénom">
+  <label for="lieu de naissance">Lieu de naissance :</label>
+  <input type="text" id="lieu de naissance" name="lieu de naissance">
+  <label for="lieu de naissance">Date de naissance :</label>
+  <input type="date" id="date de naissance" name="date de naissance">
+  <label for="lieu de naissance">Date de baptême :</label>
+  <input type="date" id="date de baptême" name="date de baptême">
+  <label for="lieu de naissance">Adresse :</label>
+  <input type="text" id="adresse" name="adresse">
+
+  <label>
+<select id="Une liste des activités">
+<option value="">--Choisir--</option>
+<option value="Culte">culte</option>
+<option value="Chorale">chorale</option>
+<option value="Don">don</option>
+<option value="Baptême">baptême</option>
+</select>
+</label><br><br>
+
+  <button type="submit">Adhérer</button>
+</form>
+
+<script>
+function validerFormulaire() {
+  var nom = document.getElementById('nom').value;
+  if (nom.trim() === "") {
+    alert("Le nom est obligatoire.");
+    return false; // Bloque l'envoi
+  }
+  return true; // Autorise l'envoi
+}
+</script>
+</body>
+</html>
